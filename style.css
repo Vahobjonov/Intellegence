@@ -1,0 +1,108 @@
+* {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+span {
+  visibility: hidden;
+}
+
+.div1:hover > span {
+  visibility: visible;
+}
+.div2:hover > span {
+  visibility: visible;
+}
+.div3:hover > span {
+  visibility: visible;
+}
+.div4:hover > span {
+  visibility: visible;
+}
+
+.wer1 {
+  background-color: #333;
+  color: white;
+  padding: 4px;
+  position: relative;
+  right: -8px;
+  border-radius: 8px;
+}
+
+.wer1::before {
+  content: "";
+  background-color: #333;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 8px;
+  left: -4px;
+  transform: rotate(45deg);
+}
+.wer2{
+    background-color: #333;
+    color: white;
+    padding: 4px;
+    position: relative;
+    border-radius: 8px;
+    bottom: -8px;
+    right: 75px;
+    top: 25px;
+
+}
+.wer2::before{
+    content: "";
+    background-color: #333;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: -4px;
+    right: 30px;
+    transform: rotate(45deg);
+}
+.wer3{
+    background-color: #333;
+    color: white;
+    padding: 4px;
+    position: relative;
+    border-radius: 8px;
+    top: 0px;
+    left: -150px;
+    
+}
+.wer3::before{
+    content: "";
+    background-color: #333;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+        top: 10.5px;
+    right: -3.5px; 
+    transform: rotate(45deg);
+}
+.wer4{
+    background-color: #333;
+    color: white;
+    padding: 4px;
+    position: relative;
+    border-radius: 8px;
+    /* bottom: -8px; */
+    right: 75px;
+    top: -22px;
+
+}
+.wer4::before{
+    content: "";
+    background-color: #333;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    transform: rotate(45deg);
+}
+.form{
+  border: 1px solid black;
+}
